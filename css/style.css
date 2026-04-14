@@ -541,6 +541,14 @@ header nav a:hover { color: var(--red); }
   justify-content: center;
   color: var(--gray);
   font-size: 14px;
+  position: relative;
+}
+.talk-image iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 /* ===== REQUIREMENTS (実施要項) ===== */
