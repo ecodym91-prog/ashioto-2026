@@ -581,7 +581,14 @@ header nav a:hover { color: var(--red); }
   font-size: 20px;
   font-weight: 700;
   color: var(--brown);
-  margin-bottom: 20px;
+  margin-bottom: 14px;
+}
+.talk-intro {
+  font-size: 15px;
+  color: var(--text-light);
+  line-height: 1.9;
+  margin: 0 auto 24px;
+  max-width: 640px;
 }
 .talk-image {
   max-width: 720px;
