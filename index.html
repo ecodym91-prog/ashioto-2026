@@ -65,11 +65,16 @@
 <!-- HERO CTA -->
 <div class="hero-cta-wrap">
   <a href="entry.html" class="hero-cta-box">
-    <p class="cta-deadline">〆切<br><span class="cta-deadline-date">2026.7.19</span>まで</p>
-    <div class="cta-main">
-      <p class="cta-year">2026年度 プログラム</p>
-      <p class="cta-label">申込受付中</p>
+    <span class="cta-stage-ribbon">1次募集 受付中</span>
+    <div class="cta-deadline-line">
+      <span class="cta-deadline-label">エントリー締切</span>
+      <span class="cta-deadline-main">2026.6.29<span class="dow">(月)</span> <span class="cta-deadline-time">12:00</span> まで</span>
     </div>
+    <div class="cta-action">
+      <span class="cta-action-label">エントリーする</span>
+      <span class="cta-action-arrow">→</span>
+    </div>
+    <p class="cta-warning">※ 合計10プロジェクト採択予定。1次で定員に達した場合、2次募集は実施しません</p>
   </a>
 </div>
 
@@ -82,8 +87,8 @@
     </div>
     <div class="news-list">
       <div class="news-item">
-        <span class="news-date">2026.05.XX</span>
-        <p>エントリー受付を開始しました。</p>
+        <span class="news-date">2026.06.XX</span>
+        <p>第4期のエントリー受付を開始しました。1次募集の締切は<strong>6月29日（月）12:00まで</strong>！</p>
       </div>
     </div>
   </div>
@@ -102,6 +107,7 @@
         <span class="section-heading-en" style="color: var(--brown);">ABOUT</span>
       </div>
       <p>秋田イノベーション・プログラム ASHIOTO -足音-は、2023年より秋田大学およびNTT東日本グループ主催で実施している、秋田県内の優れたアイデア・IT技術をもつ若手人材の発掘と支援を行うイノベーションプログラムです。IT技術を活用し社会に役立つプロダクトを開発したい方や、起業を目指したい方など、スタートアップ意欲を持つ若手人材を支援し、これまで3年間で計27組、43名の若手人材が修了しています。</p>
+      <p class="about-highlight">今年度に関しては、秋田県から地理的にも近く、これまでアンケートでもご要望の多かった<strong>山形県庄内エリア在住の方</strong>にもご参加いただけるよう、<strong>エリア拡大</strong>を実施します。<span class="about-highlight-note">※秋田での対面参加が可能な方に限ります。</span></p>
     </div>
   </div>
 </section>
@@ -132,34 +138,56 @@
       </div>
     </div>
 
-    <p class="merits-heading fade-in">本プログラム参加のメリット</p>
+    <p class="merits-heading fade-in">本プログラム参加の<span class="merits-heading-num">5</span>つのメリット</p>
     <div class="merits-list fade-in">
-      <div class="merit-item">
+      <div class="merit-item" data-merit>
         <span class="merit-icon"><img src="assets/images/ashi_ato.png" alt=""><span class="merit-num">1</span></span>
         <div class="merit-content">
-          <h5>優れた若手人材が自身のマインドに灯をつける機会</h5>
-          <p>5年後を見据えたビジネスプランの種火を行い、若手人材が未来を描けるだけの、自身のスキルを磨くためにコミットする機会を提供します。</p>
+          <h5>自分のアイデアを、<strong>5か月間かけて実際のプロトタイプ</strong>まで形にする実践の場を提供</h5>
+          <button class="merit-toggle" type="button">DETAILS<span class="merit-toggle-icon">+</span></button>
+          <div class="merit-detail">
+            <p>「やってみたい」で終わらせず、ユーザー検証・プロトタイプ開発・成果発表までを一貫して経験。プログラム修了時には実動するプロダクト、ピッチ経験、最終発表会での登壇実績が手元に残ります。</p>
+          </div>
         </div>
       </div>
-      <div class="merit-item">
+      <div class="merit-item" data-merit>
         <span class="merit-icon"><img src="assets/images/ashi_ato.png" alt=""><span class="merit-num">2</span></span>
         <div class="merit-content">
-          <h5>秋田県内外で構成されたPM（プロジェクトマネージャー）陣による<strong>伴走支援</strong></h5>
-          <p>ITを活用した事業開発の知見を持つメンターを多数配置し、アイデアが自身のビジネスや人脈に届く仲間になる機会を提供します。</p>
+          <h5>県内外で構成されたPM（プロジェクトマネージャー）陣による<strong>個別の伴走支援</strong></h5>
+          <button class="merit-toggle" type="button">DETAILS<span class="merit-toggle-icon">+</span></button>
+          <div class="merit-detail">
+            <p>ITを活用した事業開発の知見を持つメンターを多数配置し、アイデアが自身のビジネスや人脈に届く仲間になる機会を提供します。</p>
+          </div>
         </div>
       </div>
-      <div class="merit-item">
+      <div class="merit-item" data-merit>
         <span class="merit-icon"><img src="assets/images/ashi_ato.png" alt=""><span class="merit-num">3</span></span>
         <div class="merit-content">
-          <h5>プロジェクト構築費用（<strong>最大100万円</strong>）を支援、知的財産権は参加者に帰属</h5>
-          <p>プロダクトやサービスの実装費用、メンタリング、知的財産権は参加者に帰属し、初期ビジネスに対し惜しみなく活用できる支援体制。</p>
+          <h5><span class="merit-badge merit-badge-renew">リニューアル</span>プロジェクト構築費用（<strong>最大100万円</strong><span class="merit-inline-note">〈税込〉</span>）を支援、知的財産権は参加者に帰属</h5>
+          <button class="merit-toggle" type="button">DETAILS<span class="merit-toggle-icon">+</span></button>
+          <div class="merit-detail">
+            <p>プログラム期間中の開発に要する人件費の計上＋国内旅費＋プログラム事務局の定める生成AIサービス利用料の三科目（すべて実費精算）への充当を基本とし、上記以外の利用用途については事務局が審議の上利用可否について判断します。ただし、本プログラムの成果の知的財産権は参加者に帰属するので、安心して自身のアイデアを具体化いただくことができます。</p>
+          </div>
         </div>
       </div>
-      <div class="merit-item">
+      <div class="merit-item" data-merit>
         <span class="merit-icon"><img src="assets/images/ashi_ato.png" alt=""><span class="merit-num">4</span></span>
         <div class="merit-content">
-          <h5>参加者同士やコミュニティとの連携により、同期や得がたい人脈の形成・交流</h5>
-          <p>プログラム中、修了後も含め広いフィールドの交流を通して先進企業や有識者ネットワークと出会い、プロジェクトの事業化を目指します。</p>
+          <h5><span class="merit-badge merit-badge-new">NEW</span><strong>生成AIを活用したバイブコーディング講座</strong> を受講可能、AIアドバイザーのフォロー体制も用意</h5>
+          <button class="merit-toggle" type="button">DETAILS<span class="merit-toggle-icon">+</span></button>
+          <div class="merit-detail">
+            <p>初日には生成AIを用いたバイブコーディング（Vibe Coding）の講座を受講でき、プロダクト開発スピードと表現力を一段引き上げます。非エンジニアの方もアイデアを形にしやすい環境を提供します。既にバイブコーディングを活用している方にとっても、バイブコーディングに詳しいAIアドバイザーがあなたを期間中サポートします。</p>
+          </div>
+        </div>
+      </div>
+      <div class="merit-item" data-merit>
+        <span class="merit-icon"><img src="assets/images/ashi_ato.png" alt=""><span class="merit-num">5</span></span>
+        <div class="merit-content">
+          <h5>参加者同士や他コミュニティとの連携により、同期や得がたい<strong>人脈</strong>との形成・交流が可能</h5>
+          <button class="merit-toggle" type="button">DETAILS<span class="merit-toggle-icon">+</span></button>
+          <div class="merit-detail">
+            <p>PMや同期、ASHIOTO修了生とディスカッションできる機会を提供します。また、デモデイ最終成果発表会はオープンイベントとして実施することで、様々な方へ自身のアイデアを広く周知する場を設けます。</p>
+          </div>
         </div>
       </div>
     </div>
@@ -194,7 +222,7 @@
         <th>実施期間</th>
         <td>
           2026年8月15日（土）〜 2027年1月23日（土）
-          <p class="note">※エントリー締切：2026年7月19日（日）</p>
+          <p class="note">※エントリー締切<br>　1次採択：2026年6月29日（月）12:00 まで<br>　2次採択：2026年7月19日（日）23:59 まで<br>※合計10プロジェクト採択予定。1次で定員に達した場合は2次募集を実施しません。</p>
         </td>
       </tr>
       <tr>
@@ -229,18 +257,52 @@
     <div class="schedule-timeline fade-in">
       <div class="schedule-item">
         <div class="schedule-date-block">
-          <span class="schedule-date">2026.<br><strong style="font-size: 1.4em;">7.19</strong><small> 日</small></span>
+          <span class="schedule-day-label">1次</span>
+          <span class="schedule-date">2026.<br><strong style="font-size: 1.4em;">6.29</strong><small> 月</small></span>
         </div>
         <div class="schedule-content">
-          <h3>応募締切</h3>
-          <p>公式ホームページ（本ページ）より申し込みを実施</p>
+          <h3>1次採択クリエータ エントリー締切</h3>
+          <p>6月29日（月）12:00 まで<br>公式ホームページ（本ページ）より申し込みを実施<br>締切後に、書類選考＋面談（1回）を予定</p>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="schedule-date-block">
+          <span class="schedule-day-label gray">1次</span>
+          <span class="schedule-date">7.13<small> 月</small></span>
+        </div>
+        <div class="schedule-content">
+          <h3>1次採択結果の公表</h3>
+          <p>申し込みいただいた方へメールにて通知</p>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="schedule-date-block">
+          <span class="schedule-day-label">2次</span>
+          <span class="schedule-date">7.19<small> 日</small></span>
+        </div>
+        <div class="schedule-content">
+          <h3>2次採択クリエータ エントリー締切</h3>
+          <p>7月19日（日）23:59 まで<br>※1次で定員（合計10プロジェクト）に達した場合は実施しません<br>　可能な限り1次でご応募いただくよう推奨します</p>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="schedule-date-block">
+          <span class="schedule-day-label gray">2次</span>
+          <span class="schedule-date">7.23<small> 木</small></span>
+        </div>
+        <div class="schedule-content">
+          <h3>2次採択結果の公表</h3>
+          <p>申し込みいただいた方へメールにて通知</p>
         </div>
       </div>
 
       <div class="schedule-item">
         <div class="schedule-date-block">
           <span class="schedule-day-label">DAY 0</span>
-          <span class="schedule-date">7.28<small> 月</small></span>
+          <span class="schedule-date">7.31<small> 金</small></span>
         </div>
         <div class="schedule-content">
           <h3>オリエンテーション（オンライン）</h3>
@@ -354,7 +416,7 @@
     </div>
     <p class="pm-section-desc fade-in">各プロジェクトごとにアイデアや適性に応じて担当し、各々が持つ豊富な経験からあなたのプロジェクトに関する助言・指導を行いサポートを行います。</p>
 
-    <div class="pm-grid pm-grid-3 fade-in">
+    <div class="pm-grid pm-grid-4 fade-in">
       <div class="pm-card" data-pm="ikuta">
         <div class="pm-photo"><span>PHOTO</span></div>
         <p class="pm-name">生田 知久</p>
@@ -388,20 +450,6 @@
         <p class="pm-name">田畑 友啓</p>
         <p class="pm-name-en">Tomohisa TABATA</p>
         <p class="pm-org">特定非営利活動法人<br>日本MITベンチャーフォーラム</p>
-        <a href="#" class="pm-detail">プロフィール詳細</a>
-      </div>
-      <div class="pm-card" data-pm="hasegawa">
-        <div class="pm-photo"><span>PHOTO</span></div>
-        <p class="pm-name">長谷川 純一</p>
-        <p class="pm-name-en">Junichi HASEGAWA</p>
-        <p class="pm-org">ベイシステック合同会社<br>ゼネラルマネジャー</p>
-        <a href="#" class="pm-detail">プロフィール詳細</a>
-      </div>
-      <div class="pm-card" data-pm="honda">
-        <div class="pm-photo"><span>PHOTO</span></div>
-        <p class="pm-name">本田 久仁子</p>
-        <p class="pm-name-en">Kuniko HONDA</p>
-        <p class="pm-org">C-table株式会社<br>執行役員</p>
         <a href="#" class="pm-detail">プロフィール詳細</a>
       </div>
       <div class="pm-card" data-pm="yanagihara">
@@ -467,11 +515,16 @@
 <!-- CTA below CONSORTIUM -->
 <div class="hero-cta-wrap">
   <a href="entry.html" class="hero-cta-box">
-    <p class="cta-deadline">〆切<br><span class="cta-deadline-date">2026.7.19</span>まで</p>
-    <div class="cta-main">
-      <p class="cta-year">2026年度 プログラム</p>
-      <p class="cta-label">申込受付中</p>
+    <span class="cta-stage-ribbon">1次募集 受付中</span>
+    <div class="cta-deadline-line">
+      <span class="cta-deadline-label">エントリー締切</span>
+      <span class="cta-deadline-main">2026.6.29<span class="dow">(月)</span> <span class="cta-deadline-time">12:00</span> まで</span>
     </div>
+    <div class="cta-action">
+      <span class="cta-action-label">エントリーする</span>
+      <span class="cta-action-arrow">→</span>
+    </div>
+    <p class="cta-warning">※ 合計10プロジェクト採択予定。1次で定員に達した場合、2次募集は実施しません</p>
   </a>
 </div>
 
@@ -547,6 +600,18 @@
   trail.appendChild(img);
 })();
 
+// メリットのアコーディオン開閉
+document.querySelectorAll('.merit-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    var item = this.closest('[data-merit]');
+    if (!item) return;
+    var isOpen = item.classList.contains('open');
+    item.classList.toggle('open');
+    this.childNodes[0].textContent = isOpen ? 'DETAILS' : 'CLOSE';
+  });
+});
+
 // nav toggle
 var toggle = document.getElementById('navToggle');
 var mobileNav = document.getElementById('mobileNav');
@@ -597,11 +662,6 @@ var pmData = {
     org: '株式会社NTTドコモ\nR&D戦略部 シニアエキスパート',
     bio: 'プロフィール情報は後日更新予定です。'
   },
-  hasegawa: {
-    name: '長谷川 純一', nameEn: 'Junichi HASEGAWA',
-    org: 'ベイシステック合同会社\nゼネラルマネジャー',
-    bio: 'プロフィール情報は後日更新予定です。'
-  },
   ikuta: {
     name: '生田 知久', nameEn: 'Tomohisa IKUTA',
     org: '株式会社アンダム\n代表取締役',
@@ -625,11 +685,6 @@ var pmData = {
   tabata: {
     name: '田畑 友啓', nameEn: 'Tomohisa TABATA',
     org: '特定非営利活動法人\n日本MITベンチャーフォーラム',
-    bio: 'プロフィール情報は後日更新予定です。'
-  },
-  honda: {
-    name: '本田 久仁子', nameEn: 'Kuniko HONDA',
-    org: 'C-table株式会社\n執行役員',
     bio: 'プロフィール情報は後日更新予定です。'
   },
   yanagihara: {
