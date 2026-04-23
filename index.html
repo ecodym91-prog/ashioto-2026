@@ -12,6 +12,11 @@
 </head>
 <body>
 
+<!-- Custom Cursor -->
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+
 <!-- HEADER -->
 <header>
   <a href="#" class="header-logo">
@@ -106,7 +111,7 @@
       <div class="section-heading">
         <span class="section-heading-en" style="color: var(--brown);">ABOUT</span>
       </div>
-      <p>秋田イノベーション・プログラム ASHIOTO -足音-は、2023年より秋田大学およびNTT東日本グループ主催で実施している、秋田県内の優れたアイデア・IT技術をもつ若手人材の発掘と支援を行うイノベーションプログラムです。IT技術を活用し社会に役立つプロダクトを開発したい方や、起業を目指したい方など、スタートアップ意欲を持つ若手人材を支援し、これまで3年間で計27組、43名の若手人材が修了しています。</p>
+      <p>秋田イノベーション・プログラム ASHIOTO -足音-は、2023年より国立大学法人 秋田大学 およびNTT東日本グループの共同主催で実施している、秋田県内の優れたアイデア・IT技術をもつ若手人材の発掘と支援を行うイノベーションプログラムです。IT技術を活用し社会に役立つプロダクトを開発したい方や、起業を目指したい方など、スタートアップ意欲を持つ若手人材を支援し、これまで3年間で計27組、43名の若手人材が修了しています。</p>
       <p class="about-highlight">今年度に関しては、秋田県から地理的にも近く、これまでアンケートでもご要望の多かった<strong>山形県庄内エリア在住の方</strong>にもご参加いただけるよう、<strong>エリア拡大</strong>を実施します。<span class="about-highlight-note">※秋田での対面参加が可能な方に限ります。</span></p>
     </div>
   </div>
@@ -216,32 +221,71 @@
 <!-- 実施要項 -->
 <section class="section" id="requirements">
   <div class="section-inner fade-in">
-    <h3 style="font-size: 20px; font-weight: 700; color: var(--brown); margin-bottom: 8px;">実施要項</h3>
-    <table class="requirements-table">
-      <tr>
-        <th>実施期間</th>
-        <td>
-          2026年8月15日（土）〜 2027年1月23日（土）
-          <p class="note">※エントリー締切<br>　1次採択：2026年6月29日（月）12:00 まで<br>　2次採択：2026年7月19日（日）23:59 まで<br>※合計10プロジェクト採択予定。1次で定員に達した場合は2次募集を実施しません。</p>
-        </td>
-      </tr>
-      <tr>
-        <th>募集対象</th>
-        <td>
-          ・秋田県内で 通学・勤務されている方（15歳〜39歳）<br>
-          ・秋田県外在住で Uターン/Iターン を検討中の方（15歳〜39歳）<br>
-          ・山形県庄内エリア（酒田市）在住・勤務の方（15歳〜39歳）
-          <p class="note">※以下の実施場所で基本現地参加が条件となります。</p>
-        </td>
-      </tr>
-      <tr>
-        <th>実施場所</th>
-        <td>
-          Connect Labo OMOCE（おもしぇ）　他<br>
-          <span style="font-size: 12px; color: var(--gray);">住所：〒010-0001 秋田県秋田市中通4丁目4−4</span>
-        </td>
-      </tr>
-    </table>
+    <h3 class="req-title">実施要項</h3>
+    <div class="req-cards">
+      <div class="req-card">
+        <div class="req-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <rect x="3" y="5" width="18" height="16" rx="2"/>
+            <path d="M3 10h18M8 3v4M16 3v4"/>
+          </svg>
+        </div>
+        <div class="req-card-body">
+          <p class="req-card-label">実施期間</p>
+          <p class="req-card-main">2026.8.15<span class="req-dow">(土)</span> <span class="req-arrow">→</span> 2027.1.23<span class="req-dow">(土)</span></p>
+          <div class="req-card-notes">
+            <p class="req-note-head">エントリー締切</p>
+            <p>1次採択: 2026年6月29日（月）12:00 まで</p>
+            <p>2次採択: 2026年7月19日（日）23:59 まで</p>
+            <p class="req-note-warn">※合計10プロジェクト採択予定。1次で定員に達した場合、2次募集は実施しません。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="req-card">
+        <div class="req-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <circle cx="9" cy="8" r="3.5"/>
+            <path d="M2 21c0-3.8 3.1-7 7-7s7 3.2 7 7"/>
+            <circle cx="17" cy="7" r="2.5"/>
+            <path d="M14 15c1-1.5 2.8-2.5 4.8-2.5 2 0 3.2 1.5 3.2 3.5"/>
+          </svg>
+        </div>
+        <div class="req-card-body">
+          <p class="req-card-label">募集対象</p>
+          <ul class="req-list">
+            <li>秋田県内で 通学・勤務されている方（15歳〜39歳）</li>
+            <li>秋田県外在住で Uターン/Iターン を検討中の方（15歳〜39歳）</li>
+            <li>山形県庄内エリア（酒田市）在住・勤務の方（15歳〜39歳）</li>
+          </ul>
+          <p class="req-note-warn">※以下の実施場所での基本現地参加が条件となります。</p>
+        </div>
+      </div>
+
+      <div class="req-card">
+        <div class="req-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/>
+            <circle cx="12" cy="10" r="2.5"/>
+          </svg>
+        </div>
+        <div class="req-card-body">
+          <p class="req-card-label">実施場所</p>
+          <p class="req-card-main-sm">コワーキングスペース Connect Labo OMOCE（おもしぇ）　他</p>
+          <p class="req-card-addr">〒010-0001　秋田県秋田市中通4丁目4−4　NTT中通ビル1F</p>
+          <p class="req-note-warn">※イベント出展やデモデイ最終成果発表会は近隣の会場での実施を予定しています。</p>
+          <div class="req-venue-media">
+            <figure class="req-venue-photo">
+              <img src="assets/images/venue.png" alt="Connect Labo OMOCE 会場イメージ">
+              <figcaption>※会場イメージ</figcaption>
+            </figure>
+            <div class="req-card-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.101936121337!2d140.1249182!3d39.714891800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8fc30019eabd0d%3A0x41581dfa4e6c3b0e!2zT21vY2UgY29ubmVjdCBsYWJvIOOCquODouOCt-OCpw!5e0!3m2!1sja!2sjp!4v1776733772594!5m2!1sja!2sjp" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div>
 </section>
@@ -339,7 +383,7 @@
         </div>
         <div class="schedule-content">
           <h3>イベント出展</h3>
-          <p>秋田 起業家・スタートアップ交流ラボへの出展により<br>県内での人脈形成、顧客の声を収集しプロダクトのブラッシュアップを行う</p>
+          <p>秋田 起業家・スタートアップ交流ラボ2026（仮称）への出展により<br>県内での人脈形成、顧客の声を収集しプロダクトのブラッシュアップを行う</p>
         </div>
       </div>
 
@@ -589,6 +633,53 @@
 
 <!-- JS -->
 <script>
+// カスタムカーソル
+(function() {
+  var dot = document.getElementById('cursorDot');
+  var ring = document.getElementById('cursorRing');
+  if (!dot || !ring) return;
+  // タッチデバイスでは無効化
+  if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+
+  var mx = window.innerWidth / 2, my = window.innerHeight / 2;
+  var rx = mx, ry = my;
+  window.addEventListener('mousemove', function(e) {
+    mx = e.clientX; my = e.clientY;
+    dot.style.transform = 'translate(' + mx + 'px, ' + my + 'px) translate(-50%, -50%)';
+  });
+
+  function animate() {
+    rx += (mx - rx) * 0.18;
+    ry += (my - ry) * 0.18;
+    ring.style.transform = 'translate(' + rx + 'px, ' + ry + 'px) translate(-50%, -50%)';
+    requestAnimationFrame(animate);
+  }
+  animate();
+
+  // ホバー対象
+  var hoverables = 'a, button, input, textarea, select, label, [role="button"], .pm-card, .merit-item, .approach-card';
+  document.querySelectorAll(hoverables).forEach(function(el) {
+    el.addEventListener('mouseenter', function() {
+      dot.classList.add('hover');
+      ring.classList.add('hover');
+    });
+    el.addEventListener('mouseleave', function() {
+      dot.classList.remove('hover');
+      ring.classList.remove('hover');
+    });
+  });
+
+  // フェードイン表示
+  document.addEventListener('mouseenter', function() {
+    dot.style.opacity = '1';
+    ring.style.opacity = '1';
+  });
+  document.addEventListener('mouseleave', function() {
+    dot.style.opacity = '0';
+    ring.style.opacity = '0';
+  });
+})();
+
 // キービジュアル足跡 - ドン！と一発大きく表示
 (function() {
   var trail = document.getElementById('footprintTrail');
@@ -704,7 +795,12 @@ document.querySelectorAll('.pm-detail').forEach(function(link) {
     if (!data) return;
     document.getElementById('pmModalName').textContent = data.name;
     document.getElementById('pmModalNameEn').textContent = data.nameEn;
-    document.getElementById('pmModalOrg').innerHTML = data.org.replace(/\n/g, '<br>');
+    var orgEl = document.getElementById('pmModalOrg');
+    orgEl.textContent = '';
+    data.org.split('\n').forEach(function(line, i) {
+      if (i > 0) orgEl.appendChild(document.createElement('br'));
+      orgEl.appendChild(document.createTextNode(line));
+    });
     document.getElementById('pmModalBio').textContent = data.bio;
     pmModal.classList.add('open');
     document.body.style.overflow = 'hidden';
