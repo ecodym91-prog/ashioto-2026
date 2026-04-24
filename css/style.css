@@ -1366,6 +1366,7 @@ header nav a:hover { color: var(--red); }
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 18%;
 }
 .pm-name {
   font-size: 20px;
@@ -1462,6 +1463,7 @@ header nav a:hover { color: var(--red); }
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 18%;
 }
 .pm-modal-name {
   font-size: 22px;

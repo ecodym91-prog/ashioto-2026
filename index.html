@@ -802,6 +802,16 @@ document.querySelectorAll('.pm-detail').forEach(function(link) {
       orgEl.appendChild(document.createTextNode(line));
     });
     document.getElementById('pmModalBio').textContent = data.bio;
+    // 写真をカードから複製してモーダルへ
+    var photoEl = document.getElementById('pmModalPhoto');
+    photoEl.textContent = '';
+    var cardImg = card.querySelector('.pm-photo img');
+    if (cardImg) {
+      var newImg = document.createElement('img');
+      newImg.src = cardImg.src;
+      newImg.alt = cardImg.alt || '';
+      photoEl.appendChild(newImg);
+    }
     pmModal.classList.add('open');
     document.body.style.overflow = 'hidden';
   });
