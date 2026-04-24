@@ -1368,17 +1368,15 @@ header nav a:hover { color: var(--red); }
   object-fit: cover;
   object-position: center center;
 }
-/* 個別に顔位置を調整 */
-.pm-card[data-pm="kageyama"] .pm-photo img,
-.pm-modal[data-pm="kageyama"] img { object-position: 70% 30%; }
-.pm-card[data-pm="yanagihara"] .pm-photo img,
-.pm-modal[data-pm="yanagihara"] img { object-position: 68% center; }
-.pm-card[data-pm="sawamura"] .pm-photo img { object-position: center 12%; }
-.pm-card[data-pm="hasebe"] .pm-photo img { object-position: center 12%; }
-.pm-card[data-pm="honda_t"] .pm-photo img { object-position: center 12%; }
-.pm-card[data-pm="ikuta"] .pm-photo img { object-position: center 12%; }
-.pm-card[data-pm="sato"] .pm-photo img { object-position: center 12%; }
-.pm-card[data-pm="ito"] .pm-photo img { object-position: center 12%; }
+/* 個別に顔位置＆ズームを調整 */
+.pm-card[data-pm="kageyama"] .pm-photo img { transform: scale(1.4); transform-origin: 65% 25%; }
+.pm-card[data-pm="yanagihara"] .pm-photo img { transform: scale(1.35); transform-origin: 65% 35%; }
+.pm-card[data-pm="sawamura"] .pm-photo img { transform: scale(1.9); transform-origin: center 18%; }
+.pm-card[data-pm="hasebe"] .pm-photo img { transform: scale(1.8); transform-origin: center 20%; }
+.pm-card[data-pm="honda_t"] .pm-photo img { transform: scale(1.9); transform-origin: center 18%; }
+.pm-card[data-pm="ikuta"] .pm-photo img { transform: scale(1.8); transform-origin: center 20%; }
+.pm-card[data-pm="sato"] .pm-photo img { transform: scale(1.9); transform-origin: center 18%; }
+.pm-card[data-pm="ito"] .pm-photo img { transform: scale(1.8); transform-origin: center 20%; }
 .pm-name {
   font-size: 20px;
   font-weight: 700;

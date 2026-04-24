@@ -811,9 +811,11 @@ document.querySelectorAll('.pm-detail').forEach(function(link) {
       var newImg = document.createElement('img');
       newImg.src = cardImg.src;
       newImg.alt = cardImg.alt || '';
-      // カードの object-position を継承
+      // カードの object-position と transform を継承
       var cs = window.getComputedStyle(cardImg);
       newImg.style.objectPosition = cs.objectPosition;
+      newImg.style.transform = cs.transform;
+      newImg.style.transformOrigin = cs.transformOrigin;
       photoEl.appendChild(newImg);
     }
     pmModal.classList.add('open');
