@@ -1376,13 +1376,13 @@ header nav a:hover { color: var(--red); }
 .pm-card[data-pm="sawamura"] .pm-photo img,
 .pm-modal-photo[data-pm="sawamura"] img { transform: scale(3.5); transform-origin: 45% 5%; }
 .pm-card[data-pm="hasebe"] .pm-photo img,
-.pm-modal-photo[data-pm="hasebe"] img { transform: scale(1.8); transform-origin: center 6%; }
+.pm-modal-photo[data-pm="hasebe"] img { transform: scale(1.8); transform-origin: center 12%; }
 .pm-card[data-pm="honda_t"] .pm-photo img,
 .pm-modal-photo[data-pm="honda_t"] img { transform: scale(2.2); transform-origin: 60% 0%; }
 .pm-card[data-pm="ikuta"] .pm-photo img,
-.pm-modal-photo[data-pm="ikuta"] img { transform: scale(1.5); transform-origin: 55% 6%; }
+.pm-modal-photo[data-pm="ikuta"] img { transform: scale(1.5); transform-origin: 55% 12%; }
 .pm-card[data-pm="sato"] .pm-photo img,
-.pm-modal-photo[data-pm="sato"] img { transform: scale(1.5); transform-origin: 45% 6%; }
+.pm-modal-photo[data-pm="sato"] img { transform: scale(1.5); transform-origin: 45% 12%; }
 .pm-card[data-pm="ito"] .pm-photo img,
 .pm-modal-photo[data-pm="ito"] img { transform: scale(1.8); transform-origin: center 20%; }
 .pm-name {
