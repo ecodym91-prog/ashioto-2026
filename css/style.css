@@ -1369,7 +1369,7 @@ header nav a:hover { color: var(--red); }
   object-position: center center;
 }
 /* 個別に顔位置＆ズームを調整 */
-.pm-card[data-pm="kageyama"] .pm-photo img { transform: scale(1.15); transform-origin: 78% 30%; }
+.pm-card[data-pm="kageyama"] .pm-photo img { transform: scale(1.15); transform-origin: 85% 42%; }
 .pm-card[data-pm="yanagihara"] .pm-photo img { transform: scale(1.35); transform-origin: 72% 45%; }
 .pm-card[data-pm="sawamura"] .pm-photo img { transform: scale(2.6); transform-origin: center 15%; }
 .pm-card[data-pm="hasebe"] .pm-photo img { transform: scale(2.3); transform-origin: center 28%; }
