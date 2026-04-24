@@ -1230,7 +1230,7 @@ header nav a:hover { color: var(--red); }
 /* ===== CONSORTIUM ===== */
 .consortium-section {
   padding: 100px 24px;
-  background: var(--gray-light);
+  background: var(--white);
 }
 .consortium-inner {
   max-width: 960px;
