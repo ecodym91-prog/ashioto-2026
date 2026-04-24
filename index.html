@@ -805,11 +805,15 @@ document.querySelectorAll('.pm-detail').forEach(function(link) {
     // 写真をカードから複製してモーダルへ
     var photoEl = document.getElementById('pmModalPhoto');
     photoEl.textContent = '';
+    photoEl.setAttribute('data-pm', key);
     var cardImg = card.querySelector('.pm-photo img');
     if (cardImg) {
       var newImg = document.createElement('img');
       newImg.src = cardImg.src;
       newImg.alt = cardImg.alt || '';
+      // カードの object-position を継承
+      var cs = window.getComputedStyle(cardImg);
+      newImg.style.objectPosition = cs.objectPosition;
       photoEl.appendChild(newImg);
     }
     pmModal.classList.add('open');
