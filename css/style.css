@@ -1385,8 +1385,6 @@ header nav a:hover { color: var(--red); }
 .pm-modal-photo[data-pm="sato"] img { transform: scale(1.5); transform-origin: 30% 22%; }
 .pm-card[data-pm="ito"] .pm-photo img,
 .pm-modal-photo[data-pm="ito"] img { transform: scale(1.3); transform-origin: center 20%; }
-.pm-card[data-pm="irino"] .pm-photo img,
-.pm-modal-photo[data-pm="irino"] img { transform: scale(0.85); transform-origin: center top; }
 .pm-name {
   font-size: 20px;
   font-weight: 700;
