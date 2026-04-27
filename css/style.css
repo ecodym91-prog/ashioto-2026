@@ -252,7 +252,7 @@ header nav a:hover { color: var(--red); }
   opacity: 0;
   filter: drop-shadow(0 24px 60px rgba(230,11,23,0.45));
   transform: translate(-50%, -50%) scale(0.5) rotate(-6deg);
-  animation: footprint-impact 5.5s cubic-bezier(0.22, 1, 0.36, 1) 2.4s forwards;
+  animation: footprint-impact 5.5s cubic-bezier(0.22, 1, 0.36, 1) 4.4s forwards;
 }
 @keyframes footprint-impact {
   0% {
