@@ -783,15 +783,34 @@
   });
 })();
 
-// キービジュアル足跡 - ドン！と一発大きく表示
+// キービジュアル足跡 - 4つのプレビュー → 5つ目で大きく表示&残る
 (function() {
   var trail = document.getElementById('footprintTrail');
   if (!trail) return;
-  var img = document.createElement('img');
-  img.src = 'assets/images/ashi_ato.png';
-  img.className = 'footprint-impact';
-  img.alt = '';
-  trail.appendChild(img);
+  // 1〜4: いろんな位置に小さくドン！と現れて消える
+  var positions = [
+    { left: '22%', top: '28%', rotate: -14 },
+    { left: '72%', top: '32%', rotate: 12 },
+    { left: '26%', top: '68%', rotate: -8 },
+    { left: '76%', top: '70%', rotate: 18 }
+  ];
+  positions.forEach(function(pos, i) {
+    var img = document.createElement('img');
+    img.src = 'assets/images/ashi_ato.png';
+    img.className = 'footprint-preview';
+    img.alt = '';
+    img.style.left = pos.left;
+    img.style.top = pos.top;
+    img.style.setProperty('--rot', pos.rotate + 'deg');
+    img.style.animationDelay = (i * 0.5) + 's';
+    trail.appendChild(img);
+  });
+  // 5つ目: 既存と同じスローアニメで残る
+  var finalImg = document.createElement('img');
+  finalImg.src = 'assets/images/ashi_ato.png';
+  finalImg.className = 'footprint-impact';
+  finalImg.alt = '';
+  trail.appendChild(finalImg);
 })();
 
 // メリットのアコーディオン開閉
