@@ -1938,6 +1938,20 @@ footer {
   color: var(--brown);
   margin-bottom: 16px;
 }
+.footer-office-contact {
+  font-size: 14px;
+  color: var(--brown);
+  margin-bottom: 12px;
+  line-height: 1.8;
+}
+.footer-office-contact a {
+  color: var(--red);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.3s;
+}
+.footer-office-contact a:hover { color: var(--red-dark); }
 .footer-office-mail {
   font-size: 14px;
   color: var(--brown);
