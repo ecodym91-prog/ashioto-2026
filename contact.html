@@ -7,7 +7,7 @@
   <meta name="description" content="秋田イノベーション・プログラム ASHIOTO -足音- 2026 お問い合わせ">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,6 +26,7 @@
     <nav>
       <ul>
         <li><a href="index.html#program">PROGRAM</a></li>
+        <li><a href="index.html#contents">CONTENTS</a></li>
         <li><a href="index.html#schedule">SCHEDULE</a></li>
         <li><a href="index.html#consortium">CONSORTIUM</a></li>
         <li><a href="index.html#faq">FAQ</a></li>
@@ -40,6 +41,7 @@
 <div class="mobile-nav" id="mobileNav">
   <ul>
     <li><a href="index.html#program">PROGRAM</a></li>
+    <li><a href="index.html#contents">CONTENTS</a></li>
     <li><a href="index.html#schedule">SCHEDULE</a></li>
     <li><a href="index.html#consortium">CONSORTIUM</a></li>
     <li><a href="index.html#faq">FAQ</a></li>
@@ -59,9 +61,9 @@
     </div>
     <p class="contact-desc fade-in">お問い合わせをいただく方の情報および、お問い合わせ内容を下記に入力の上、「送信する」をクリックしてください。<br>追って、担当者よりご連絡差し上げます。</p>
     <div class="contact-form-embed fade-in">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScJ2CCzrMl1HoyWM3Ou2miDBQBuX5zo4NNJZsBGwr79BYJ1eg/viewform?embedded=true" width="640" height="1456" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScJ2CCzrMl1HoyWM3Ou2miDBQBuX5zo4NNJZsBGwr79BYJ1eg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" title="ASHIOTO 2026 お問い合わせフォーム">読み込んでいます…</iframe>
     </div>
-    <div style="text-align:center; margin-top:48px;">
+    <div class="contact-back fade-in">
       <a href="index.html" class="entry-back-btn">トップへ戻る</a>
     </div>
   </div>
@@ -74,6 +76,7 @@
       <h3 class="footer-info-title">INFORMATION</h3>
       <p class="footer-office-name">ASHIOTOプログラム事務局</p>
       <p class="footer-office-label">〈 事務局・運営 〉株式会社NTT DXパートナー</p>
+      <p class="footer-office-contact">お問い合わせは<a href="contact.html">CONTACT</a>ページもしくは以下のメールアドレスへお願いいたします。</p>
       <p class="footer-office-mail">Mail：<a href="mailto:ashioto2026_akita@nttdxpn.co.jp">ashioto2026_akita@nttdxpn.co.jp</a></p>
       <p class="footer-office-link">これまでのASHIOTOの取り組みは<a href="https://akatsuki-akita-innovation.studio.site/" target="_blank" rel="noopener">こちら</a>から</p>
     </div>
@@ -91,6 +94,7 @@
 </footer>
 
 <script>
+// nav toggle
 var toggle = document.getElementById('navToggle');
 var mobileNav = document.getElementById('mobileNav');
 toggle.addEventListener('click', function() {
@@ -103,6 +107,40 @@ mobileNav.querySelectorAll('a').forEach(function(a) {
     mobileNav.classList.remove('open');
   });
 });
+
+// scroll fade-in
+var fadeEls = document.querySelectorAll('.fade-in');
+if (fadeEls.length) {
+  var obs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.15 });
+  fadeEls.forEach(function(el) { obs.observe(el); });
+}
+
+// custom cursor
+(function() {
+  var dot = document.getElementById('cursorDot');
+  var ring = document.getElementById('cursorRing');
+  if (!dot || !ring) return;
+  var mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
+  document.addEventListener('mousemove', function(e) {
+    mouseX = e.clientX; mouseY = e.clientY;
+    dot.style.transform = 'translate(' + mouseX + 'px,' + mouseY + 'px) translate(-50%,-50%)';
+  });
+  function loop() {
+    ringX += (mouseX - ringX) * 0.18;
+    ringY += (mouseY - ringY) * 0.18;
+    ring.style.transform = 'translate(' + ringX + 'px,' + ringY + 'px) translate(-50%,-50%)';
+    requestAnimationFrame(loop);
+  }
+  loop();
+  document.querySelectorAll('a, button, input, textarea, select, label, [role="button"]').forEach(function(el) {
+    el.addEventListener('mouseenter', function() { dot.classList.add('hover'); ring.classList.add('hover'); });
+    el.addEventListener('mouseleave', function() { dot.classList.remove('hover'); ring.classList.remove('hover'); });
+  });
+})();
 </script>
 
 </body>
