@@ -275,7 +275,7 @@ header nav a:hover { color: var(--red); }
   top: 50%;
   transform: translateY(-50%);
   z-index: 2;
-  max-width: 540px;
+  max-width: min(640px, 50vw);
   text-align: left;
   padding: 0 24px;
 }
@@ -286,12 +286,12 @@ header nav a:hover { color: var(--red); }
   background: var(--white);
 }
 .hero-catch {
-  font-size: clamp(28px, 4.4vw, 64px);
+  font-size: clamp(26px, 3.6vw, 56px);
   font-weight: 700;
   color: var(--black);
   line-height: 1.4;
   margin-bottom: 72px;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   text-shadow: 2px 3px 0 rgba(230,11,23,0.1), 4px 6px 12px rgba(80,40,90,0.18);
   white-space: nowrap;
 }
