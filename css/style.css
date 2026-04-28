@@ -311,9 +311,10 @@ header nav a:hover { color: var(--red); }
   height: auto;
 }
 .hero-tagline {
-  font-size: 26px;
+  font-size: 18px;
   color: var(--text);
   line-height: 1.9;
+  margin-top: 24px;
   margin-bottom: 52px;
   letter-spacing: 0.04em;
   font-weight: 500;
