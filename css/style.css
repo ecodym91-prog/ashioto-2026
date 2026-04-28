@@ -293,14 +293,17 @@ header nav a:hover { color: var(--red); }
   line-height: 1.35;
   margin-bottom: 56px;
   letter-spacing: 0.02em;
-  background: linear-gradient(120deg, #e60b17 0%, #ff7a00 30%, #c91d6f 55%, #8c3ca0 80%, #4a3da8 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: drop-shadow(2px 3px 0 rgba(230,11,23,0.08)) drop-shadow(4px 6px 12px rgba(80,40,90,0.18));
+  color: var(--black);
+  text-shadow: 2px 3px 0 rgba(230,11,23,0.08), 4px 6px 12px rgba(80,40,90,0.18);
   white-space: normal;
   word-break: keep-all;
   overflow-wrap: anywhere;
+}
+.hero-accent {
+  background: linear-gradient(120deg, #e60b17 0%, #ff7a00 35%, #c91d6f 65%, #8c3ca0 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .hero-logo-wrap {
   margin-bottom: 40px;
