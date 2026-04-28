@@ -324,10 +324,14 @@ header nav a:hover { color: var(--red); }
   text-shadow: 1px 2px 0 rgba(230,11,23,0.08), 2px 4px 8px rgba(80,40,90,0.15);
 }
 .hero-tagline-accent {
-  color: var(--red);
+  background: linear-gradient(120deg, #e60b17 0%, #ff7a00 35%, #c91d6f 65%, #8c3ca0 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 4px;
+  text-decoration-color: var(--red);
 }
 
 /* hero CTA box */

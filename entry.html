@@ -12,6 +12,10 @@
 </head>
 <body>
 
+<!-- Custom Cursor -->
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
 <!-- HEADER -->
 <header>
   <a href="index.html" class="header-logo">
@@ -95,6 +99,29 @@ mobileNav.querySelectorAll('a').forEach(function(a) {
     mobileNav.classList.remove('open');
   });
 });
+
+// custom cursor
+(function() {
+  var dot = document.getElementById('cursorDot');
+  var ring = document.getElementById('cursorRing');
+  if (!dot || !ring) return;
+  var mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
+  document.addEventListener('mousemove', function(e) {
+    mouseX = e.clientX; mouseY = e.clientY;
+    dot.style.transform = 'translate(' + mouseX + 'px,' + mouseY + 'px) translate(-50%,-50%)';
+  });
+  function loop() {
+    ringX += (mouseX - ringX) * 0.18;
+    ringY += (mouseY - ringY) * 0.18;
+    ring.style.transform = 'translate(' + ringX + 'px,' + ringY + 'px) translate(-50%,-50%)';
+    requestAnimationFrame(loop);
+  }
+  loop();
+  document.querySelectorAll('a, button, input, textarea, select, label, [role="button"]').forEach(function(el) {
+    el.addEventListener('mouseenter', function() { dot.classList.add('hover'); ring.classList.add('hover'); });
+    el.addEventListener('mouseleave', function() { dot.classList.remove('hover'); ring.classList.remove('hover'); });
+  });
+})();
 </script>
 
 </body>
