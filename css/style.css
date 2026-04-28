@@ -222,7 +222,7 @@ header nav a:hover { color: var(--red); }
   opacity: 0;
   filter: drop-shadow(0 12px 30px rgba(230,11,23,0.4));
   transform: translate(-50%, -50%) scale(0.4) rotate(var(--rot, 0deg));
-  animation: footprint-preview 1.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: footprint-preview 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 @keyframes footprint-preview {
   0% {
@@ -252,7 +252,7 @@ header nav a:hover { color: var(--red); }
   opacity: 0;
   filter: drop-shadow(0 24px 60px rgba(230,11,23,0.45));
   transform: translate(-50%, -50%) scale(0.5) rotate(-6deg);
-  animation: footprint-impact 5.5s cubic-bezier(0.22, 1, 0.36, 1) 4.4s forwards;
+  animation: footprint-impact 6s cubic-bezier(0.22, 1, 0.36, 1) 6s forwards;
 }
 @keyframes footprint-impact {
   0% {
