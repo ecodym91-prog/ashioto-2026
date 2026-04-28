@@ -1696,7 +1696,44 @@ header nav a:hover { color: var(--red); }
   .faq-answer p { font-size: 13px; }
 }
 
-/* ===== CONTACT ===== */
+/* ===== CONTACT PAGE ===== */
+.contact-page {
+  min-height: calc(100vh - 80px);
+  padding: 140px 24px 100px;
+  background: linear-gradient(180deg, #ffffff 0%, #fbf8fc 100%);
+}
+.contact-page-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.contact-page .section-heading {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.contact-page .contact-desc {
+  font-size: 16px;
+  color: var(--text-light);
+  line-height: 1.95;
+  text-align: center;
+  margin: 0 auto 56px;
+  max-width: 640px;
+}
+.contact-form-embed {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.contact-form-embed iframe {
+  width: 100%;
+  max-width: 720px;
+  min-height: 1456px;
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.05);
+  background: var(--white);
+}
+
+/* ===== CONTACT (legacy in-page) ===== */
 .contact-section {
   padding: 100px 24px;
   border-top: 3px solid transparent;
