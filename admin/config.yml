@@ -1,0 +1,30 @@
+backend:
+  name: github
+  repo: ecodym91-prog/ashioto-2026
+  branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
+publish_mode: simple
+media_folder: "assets/images/uploads"
+public_folder: "/assets/images/uploads"
+locale: ja
+
+site_url: https://ecodym91-prog.github.io/ashioto-2026/
+display_url: https://ecodym91-prog.github.io/ashioto-2026/
+logo_url: https://ecodym91-prog.github.io/ashioto-2026/assets/images/logo%202026.png
+
+collections:
+  - name: news
+    label: お知らせ（NEWS）
+    label_singular: お知らせ
+    folder: content/news
+    create: true
+    delete: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    sortable_fields: ['date']
+    summary: "{{date}} — {{title}}"
+    fields:
+      - { label: "日付", name: date, widget: datetime, format: "YYYY.MM.DD", time_format: false, picker_utc: false }
+      - { label: "本文（HTML可）", name: body, widget: text, hint: "<strong>太字</strong> や <a href=...> など最低限のHTMLが使えます" }
+      - { label: "公開する", name: published, widget: boolean, default: true }
